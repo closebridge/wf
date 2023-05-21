@@ -1,0 +1,3 @@
+src/index.css can be use for normal indev shit
+
+BUT REMEMBER TO SYNC CHANGES FROM IT TO layout/default.html
