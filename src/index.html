@@ -7,11 +7,32 @@
   <link href="/dist/output.css" rel="stylesheet">
   <link href="/src/style.css" rel="stylesheet">
   <script src="scripts/main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" type="image/x-icon" href="/item/favicon.png">
   <title>(bridge) little shelter</title>
-  <!--Content from down here-->
+  <!--script from down here-->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <!--2-->
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="lg:content-auto">
     <div class="bridge">
       <h1 id="first" style="text-decoration-skip-ink: none" class="text-5xl font-bold ml-11 mt-40 text-gray-500 cursor-zoom-in hover:text-white transition hover:underline decoration-dashed decoration-2 underline-offset-8 hover:animate-bounce w-8 h-8">
       (bridge) </h1> 
@@ -23,6 +44,8 @@
       <div class="bg-gray-600 rounded-lg shadow-md min-h-[50px] text-center text-white">2</div>
       <div class="bg-gray-600 rounded-lg shadow-md min-h-[50px] text-center text-white">3</div>
     </div>
+  
     <!--button for each action-->
+  </div>
 </body>
 </html>
